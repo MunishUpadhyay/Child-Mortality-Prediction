@@ -164,6 +164,8 @@ Risk Score is calculated as:
 
 ## 🗂️ Project Structure
 
+> The project follows a modular architecture separating data processing, modeling, and visualization layers for scalability and maintainability.
+
 ```
 Child_Mortality_India/
 │
