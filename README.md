@@ -167,42 +167,77 @@ Risk Score is calculated as:
 ```
 Child_Mortality_India/
 │
-├── data/
-│   ├── raw/
-│   │   ├── nfhs/
-│   │   ├── srs/
-│   │   └── india_states.geojson
+├── app/                          # Streamlit application
+│   ├── app.py                   # Main Streamlit entry point
 │   │
-│   └── processed/
-│       ├── nfhs_with_risk_scores.csv
-│       ├── child_death_category_srs.csv
-│       └── child_death_causes_srs.csv
+│   ├── components/              # UI components
+│   │   ├── overview.py
+│   │   ├── map_view.py
+│   │   ├── prediction.py
+│   │   ├── feature_importance.py
+│   │   └── risk_analysis.py
+│   │
+│   └── utils/
+│       └── config.py            # App configuration
 │
-├── src/
-│   ├── data/
-│   ├── features/
-│   ├── models/
-│   └── visualization/
-│
-├── app/
-│   ├── app.py
-│   └── components/
-│       ├── overview.py
-│       ├── map_view.py
-│       └── prediction.py
-│
-├── assets/
+├── assets/                      # Flowchart images for README
 │   ├── system_flow.png
 │   ├── data_pipeline.png
 │   ├── model_flow.png
 │   └── dashboard_flow.png
 │
+├── data/
+│   ├── raw/                     # Raw datasets
+│   │   ├── nfhs/
+│   │   ├── srs/
+│   │   ├── unicef/
+│   │   └── india_states.geojson
+│   │
+│   └── processed/               # Cleaned & final datasets
+│       ├── nfhs_with_risk_scores.csv
+│       ├── state_factors_nfhs.csv
+│       ├── india_u5mr_full.csv
+│       ├── child_death_category_srs.csv
+│       └── child_death_causes_srs.csv
+│
+├── notebooks/                   # Jupyter notebooks (analysis pipeline)
+│   ├── 01_eda_nfhs.ipynb
+│   ├── 02_trend_analysis_unicef.ipynb
+│   ├── 03_srs_analysis.ipynb
+│   ├── 04_feature_engineering.ipynb
+│   └── 05_model_building.ipynb
+│
 ├── outputs/
-│   ├── figures/
+│   ├── figures/                 # Generated plots
+│   │   ├── comparisons/
+│   │   ├── distributions/
+│   │   ├── heatmaps/
+│   │   ├── relationships/
+│   │   └── trends/
+│   │
 │   └── models/
 │       └── random_forest_model.pkl
 │
-├── notebooks/
+├── reports/                     # (Optional) reports / documentation
+│
+├── src/                         # Core ML pipeline code
+│   ├── data/
+│   │   ├── load_data.py
+│   │   └── preprocess.py
+│   │
+│   ├── features/
+│   │   └── feature_engineering.py
+│   │
+│   ├── models/
+│   │   ├── train_model.py
+│   │   └── evaluate_model.py
+│   │
+│   └── visualization/
+│       └── plots.py
+│
+├── .gitignore
+├── .python-version
+├── main.py                      # Pipeline execution script
 ├── requirements.txt
 └── README.md
 ```
