@@ -67,7 +67,11 @@ The system helps identify **high-risk regions** and provides **interpretable ins
 
 ## 🔄 System Architecture
 
-![System Flow](assets/system_flow.png)
+<p align="center">
+  <img src="assets/system_flow.png" width="200"/>
+  <br>
+  <em>Figure: System Architecture of the Project</em>
+</p>
 
 This diagram shows how raw data is transformed into actionable insights using preprocessing, feature engineering, and machine learning.
 
@@ -75,7 +79,9 @@ This diagram shows how raw data is transformed into actionable insights using pr
 
 ## 📊 Data Pipeline
 
-![Data Pipeline](assets/data_pipeline.png)
+<p align="center">
+  <img src="assets/data_pipeline.png" width="200"/>
+</p>
 
 * Raw datasets are cleaned and normalized
 * Relevant features are selected
@@ -85,7 +91,9 @@ This diagram shows how raw data is transformed into actionable insights using pr
 
 ## 🤖 Model Workflow
 
-![Model Flow](assets/model_flow.png)
+<p align="center">
+  <img src="assets/model_flow.png" width="200"/>
+</p>
 
 * Input features are fed into a Random Forest model
 * Model identifies important factors
@@ -95,7 +103,9 @@ This diagram shows how raw data is transformed into actionable insights using pr
 
 ## 🖥️ Dashboard Flow
 
-![Dashboard Flow](assets/dashboard_flow.png)
+<p align="center">
+  <img src="assets/dashboard_flow.png" width="200"/>
+</p>
 
 * User interacts with prediction tool
 * Model generates risk output
