@@ -49,11 +49,6 @@ Thumbs.db
 # data/processed/
 
 # -------------------------
-# Streamlit cache
-# -------------------------
-.streamlit/
-
-# -------------------------
 # Temporary files
 # -------------------------
 *.tmp
